@@ -1,6 +1,18 @@
 """
 TCP Server — Ping Pong (educational example)
 Waits for a client to connect, then replies "PONG" to every "PING" received.
+
+Author  : Pietro Boccadoro
+Email   : pieroboccadoro13[at]gmail[dot]com
+Date    : 2024-04-11
+Version : 1.0
+
+Key steps in a TCP client:
+    1. Create a socket (socket.socket)
+    2. Connect to the server (socket.connect)
+    3. Send and receive data (socket.sendall, socket.recv)
+    4. Close the connection (socket.close)
+Note: Run tcp_server.py in one terminal before running tcp_client.py in another terminal.
 """
 
 import socket   # standard library module that provides low-level networking interfaces

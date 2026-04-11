@@ -1,6 +1,11 @@
 """
 UDP Server — Ping Pong (educational example)
 
+Author  : Pietro Boccadoro
+Email   : pieroboccadoro13[at]gmail[dot]com
+Date    : 2024-04-11
+Version : 1.0
+
 Key differences from TCP:
   - SOCK_DGRAM instead of SOCK_STREAM  →  UDP, connectionless
   - No listen() or accept()           →  no connection is ever "established"
