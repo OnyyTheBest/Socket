@@ -110,6 +110,14 @@ UDP gives you no delivery guarantee, but on localhost packets are almost never l
 
 On the client side, make sure the `socket.timeout` handler prints a meaningful message and that the client continues to the next ping rather than crashing. Observe how the timeout mechanism becomes essential once packet loss is introduced.
 
+### Exercise 4 - custom messages exchange implementation
+
+Choose any real-world interaction that involves two parties sending data back and forth and implement it as a socket program. The choice is entirely yours: a simple calculator where the client sends an arithmetic expression and the server evaluates it and returns the result, a guessing game where the server picks a secret number and the client sends guesses until it wins, a key-value store where the client can send `SET name Alice` and `GET name` commands, a mini chat where two terminals exchange free-form text messages, or anything else you find interesting.
+ 
+Before writing any code, answer these questions in a comment block at the top of each file: what is the protocol — TCP or UDP, and why did you choose it for this exchange? What is the exact format of the messages (plain text, comma-separated fields, JSON)? What happens if the client sends a malformed message? Is there a termination condition, and if so, who initiates it?
+ 
+The goal is not to build something complex, but to go through the full design loop — defining a mini-protocol, implementing both sides from scratch, and handling at least one error case — without a template to follow.
+
 ---
 
 ## Further reading
