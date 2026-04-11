@@ -90,6 +90,7 @@ TCP guarantees delivery, so `recv()` will only return once data has arrived. UDP
 ### Exercise 0 - rewrite the code
 
 Modify the proposed code by using functions as much as possible.
+Optimize the code as much as possible, explaining the rationale of any modifications.
 
 ### Exercise 1 — message counter
 
